@@ -411,6 +411,11 @@ a {
     padding: 0px 79px;
   }
 
+  .product__add {
+    top: 170px;
+    left: 80px;
+  } 
+
   .button_bottom {
     margin-top: 41px;
     margin-bottom: 85.5px;
