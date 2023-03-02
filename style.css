@@ -29,6 +29,18 @@ a {
   align-items: center;
 }
 
+.header_main:hover {
+  transform: scale(1.1);
+}
+
+.header_search:hover {
+  transform: scale(1.1);
+}
+
+.header__link-site:hover {
+  transform: scale(1.1);
+}
+
 .header__left {
   display: flex;
   align-items: center;
@@ -97,6 +109,7 @@ a {
 
 .sale__item {
   position: relative;
+  cursor: pointer;
 }
 
 .sale__content {
@@ -267,10 +280,156 @@ a {
   cursor: pointer;
 }
 
+.button_bottom:hover {
+  background-color: #F16D7F;
+  color: white;
+  transform: scale(1.05);
+}
+
 .button-wrapper {
   display: flex;
   justify-content: center;
 }
+
+.advantages {
+  background-color: #222224;
+  padding-top: 104px;
+  padding-bottom: 104px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.advantages__item {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+}
+
+.advantages__item:hover {
+  transform: scale(1.1);
+}
+
+.advantages__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FBFBFB;
+}
+
+.advantages__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FBFBFB;
+}
+
+.subscribe {
+  background: url(img/Layer_41.jpg);
+  display: flex;
+  align-items: center;
+  gap: 327px; 
+  min-height: 448px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.subscribe__registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe__heading {
+  font-size: 24px;
+}
+
+.subscribe__text {
+  font-size: 18px;
+  margin-top: 7px;
+}
+
+.regi {
+  display: flex;
+  margin-top: 32px;
+}
+
+.email_place {
+  background: url(img/enter_email.svg);
+  width: 256px;
+  height: 49px;
+  border: none;
+  opacity: 67%;
+  font-size: 14px;
+}
+.subscribe_button {
+  width: 100px;
+  height: 49px;
+  border: none;
+  background: url(img/button_subscribe.svg);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.subscribe_button:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  background-color: #222224;
+  display: flex;
+  gap: 7.3px;
+  justify-content: space-between;
+  min-height: 79px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.footer__text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
+}
+
+.icons {
+  display: flex;
+  gap: 7.29px;
+  max-height: 32px;
+}
+
+.icons__link {
+  display: flex;
+  border: 1px solid #222224;
+  /* padding: 8px 11.5px; */
+  width: 31.45px;
+  height: 32px;
+  background-color: white;
+  place-content: center;
+  align-items: center;
+}
+
+.icons__link:hover {
+  background-color: #F16D7F;
+  transform: scale(1.2);
+  fill: white;
+}
+
 
 @media (max-width: 1024px) and (min-width: 768px) {
 
@@ -318,6 +477,23 @@ a {
   .button_bottom {
     margin-top: 33px;
     margin-bottom: 74px;
+  }
+
+  .advantages {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .subscribe {
+    gap: 40px;
+    flex-direction: column;
+    margin-top: 53px;
+  }
+  
+
+  .footer {
+    padding-left: 32px;
+    padding-right: 33px;
   }
 }
 
@@ -420,4 +596,39 @@ a {
     margin-top: 41px;
     margin-bottom: 85.5px;
   }
+
+  .advantages {
+    padding-left: 14px;
+    padding-right: 13px;
+  }
+
+  .subscribe {
+    margin-top: 65px;
+    gap: 50px;
+  }
+
+  .woman {
+    height: 170px;
+  }
+
+  .subscribe__text {
+    font-size: 14px;
+  }
+
+  .regi {
+    margin-top: 25px;
+    margin-bottom: 68px;
+  }
+
+  .email_place {
+    width: 200px;
+
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+    padding-top: 43px;
+    padding-bottom: 9px;
+  }
+
 }
